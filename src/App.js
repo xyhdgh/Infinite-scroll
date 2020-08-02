@@ -1,24 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+// import List from './components/List.jsx'
+// import VirtualList from './components/VirtualList.jsx'
+// import Loading from './components/Loading.jsx'
+// import Header from './views/Header'
+// import Footer from './views/Footer'
+// import Container from './views/Container'
+import './rem'
+import Tiny from './components/Tiny'
 
 function App() {
+  // const [isLoading, setIsLoading] = useState(false)
+  // const [list, setList] = useState([])
+  // useEffect(() => {
+  //   setIsLoading(true)
+  //   setTimeout(() => {
+  //     setIsLoading(false)
+  //   }, 1000)
+  // }, [])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{display: "flex", flexDirection: "column", width: "100vw", height: "100vh"}}>
+      {/* <List />
+      <div style={{width: '320px', height: '568px', margin: '100px auto', position: 'relative', border: "1px solid red"}} id="box">
+        {isLoading ? <Loading list={list} /> : <VirtualList list={list}/>}
+      </div> */}
+      {/* <Header />
+      <Container />
+      <Footer /> */}
+      <Tiny />
     </div>
   );
 }

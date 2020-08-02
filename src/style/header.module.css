@@ -1,0 +1,9 @@
+.container {
+  width: 100vw;
+  height: .5rem;
+  background: #00bcd4;
+  color: #fff;
+  font-size: .19rem;
+  text-align: center;
+  line-height: .5rem;
+}
